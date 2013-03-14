@@ -20,8 +20,6 @@ void setup()  {
   pinMode(ledB, OUTPUT); 
   // serial setup
   Serial.begin(9600);
-  // random init : analog input 0 should be unconnect
-  randomSeed(analogRead(0));
   // set slow RED at startup
   for(int i = 0 ; i < 255; i++) { 
     Rouge++;
